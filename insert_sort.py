@@ -10,6 +10,9 @@ def insert_sort(lists):
         lists[j] =  key
       j -=1
   return lists
+start = time.clock()
 lists = [9,4,0,1,2,0,-5]
 lists = insert_sort(lists)
 print lists
+end  = time.clock()
+print "The time cost is %f s"%(end -start)
